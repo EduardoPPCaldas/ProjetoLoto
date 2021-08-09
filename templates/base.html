@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href={% static "/css/page.css"%}>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div id="image-header-div">
+      <a href={% url "index" %} id="anchor-image">      
+        <img src={% static "/assets/images/logo.png"%} alt="Logo do site"  id="image-header">
+        <p id="titulo">Logo</p>
+      </a>
+    </div>
+    <div>
+      <a href={% url "index" %}>Início</a>
+      <a href="#">Resultado</a>
+    </div>
+    <div>
+      <a href="#">Sair</a>
+    </div>
+  </header>
+  <main>
+    {%block conteudo%}
+
+    {% endblock conteudo %}
+  </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(37, 4, 37);
+  height: 6rem;
+}
+#image-header-div{
+  align-self: center;
+  display: flex;
+}
+#image-header{
+  height: 4rem;
+  width: 4rem;
+}
+a{
+  color: white;
+  text-decoration: none;
+  margin: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+#anchor-image{
+  margin: 1rem;
+  display: flex;
+}
+#titulo{
+  align-self: center;
+  margin-left: 0.5rem;
+  font-size: 32px;
+}
+body{
+  background-color: rgb(221, 218, 218);
+}
