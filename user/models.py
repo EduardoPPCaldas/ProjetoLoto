@@ -46,7 +46,7 @@ class Usuario(AbstractBaseUser , PermissionsMixin):
     max_length=11
   )
   nome = models.CharField(
-    verbose_name="Nome do usuário",
+    verbose_name="Nome completo do usuário",
     max_length=194
   )
 
