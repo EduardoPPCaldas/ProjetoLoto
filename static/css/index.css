@@ -1,0 +1,28 @@
+h2{
+  font-family: "Roboto", sans-serif;
+}
+#game{
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(247, 247, 160);
+  border-radius: 40px;
+
+
+  border: 2px solid yellow;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-game{
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  background-color: purple;
+  color: antiquewhite;
+  font-family: "Roboto",sans-serif;
+  font-weight: bold;
+
+  margin: auto;
+}

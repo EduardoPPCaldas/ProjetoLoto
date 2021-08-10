@@ -34,6 +34,12 @@ a{
   margin-left: 0.5rem;
   font-size: 32px;
 }
-body{
+main{
+  height: auto;
+  width: auto;
   background-color: rgb(221, 218, 218);
+}
+footer{
+  height: 2rem;
+  background-color: rgb(37, 4, 37);
 }
