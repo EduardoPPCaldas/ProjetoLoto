@@ -42,6 +42,9 @@ INSTALLED_APPS = [
 INSTALLED_APPS += [
     'user',
 ]
+INSTALLED_APPS += [
+    "phonenumber_field"
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -131,3 +134,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = "user.Usuario"
+
+#Phone Number
+
+PHONENUMBER_DEFAULT_REGION = "BR"

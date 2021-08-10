@@ -1,12 +1,15 @@
 from django.db import models
 from django.contrib.auth.models import (BaseUserManager , AbstractBaseUser, PermissionsMixin)
+from phonenumber_field.modelfields import PhoneNumberField
 
 class UsuarioManager(BaseUserManager):
-  def create_user(self ,cpf , nome, email, password= None):
+  def create_user(self ,cpf , nome, telefone, email, password= None, **extra_fields):
     usuario = self.model(
       email = self.normalize_email(email),
       nome = nome,
-      cpf = cpf
+      cpf = cpf,
+      telefone = telefone,
+      **extra_fields
     )
     usuario.is_active = True
     usuario.is_staff = False
@@ -17,10 +20,11 @@ class UsuarioManager(BaseUserManager):
     usuario.save()
 
     return usuario
-  def create_superuser(self, email, cpf , nome , password):
+  def create_superuser(self, email, cpf, telefone , nome , password):
     usuario = self.create_user(
       email = self.normalize_email(email),
       cpf = cpf,
+      telefone = telefone,
       nome = nome,
       password = password,
     )
@@ -49,7 +53,7 @@ class Usuario(AbstractBaseUser , PermissionsMixin):
     verbose_name="Nome completo do usuário",
     max_length=194
   )
-
+  telefone = PhoneNumberField()
   is_active = models.BooleanField(
     verbose_name="Usuario está ativo",
     default=True,
@@ -67,7 +71,7 @@ class Usuario(AbstractBaseUser , PermissionsMixin):
 
   objects = UsuarioManager()
 
-  REQUIRED_FIELDS = ["cpf", "nome"]
+  REQUIRED_FIELDS = ["cpf", "nome", "telefone"]
 
   class Meta:
     verbose_name = "Usuário"
