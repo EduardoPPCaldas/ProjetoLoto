@@ -5,6 +5,7 @@
 }
 body{
   height: 100vh;
+  background-color: lightgrey;
 }
 header{
   display: flex;
@@ -12,6 +13,8 @@ header{
   align-items: center;
   background-color: rgb(37, 4, 37);
   height: 6rem;
+
+  margin-bottom: 30px;
 }
 #image-header-div{
   align-self: center;

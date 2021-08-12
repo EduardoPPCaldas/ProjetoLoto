@@ -1,29 +1,62 @@
-h2{
+#greetings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin: auto;
+}
+p{
+  font-family: "Roboto" , sans-serif;
+}
+#greetings-text{
   font-family: "Roboto", sans-serif;
+  margin: 2rem;
+  font-size: 40px;
 }
 #game{
-  height: 500px;
-  width: 80%;
+  height: 480px;
+  width: 480px;
   margin: auto;
-  background-color: rgb(247, 247, 160);
+  background-color: rgb(182, 182, 182);
   border-radius: 40px;
-
-
-  border: 2px solid yellow;
+  box-shadow: 0 3px gray;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+#main-table{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
 }
 .button-game{
   height: 50px;
   width: 50px;
+
   border-radius: 4px;
   background-color: purple;
   border: 1px solid rgb(37, 1, 53);
+  box-shadow: 0 1px indigo;
+
+
   color: antiquewhite;
   font-family: "Roboto",sans-serif;
   font-weight: bold;
+  font-size: 1.2rem;
 
-  margin: auto;
+  cursor: pointer;
+
+  margin: 0 1rem;
+
+}
+.button-game:hover{
+  opacity: 0.8;
+}
+.button-game-clicked{
+  background-color: green;
+  border: 1px solid lightgreen;
+  box-shadow: none;
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{% static "css/page.css"%}">
     <link rel="shortcut icon" href={% static "/assets/images/favicon.ico" %} type="image/x-icon">
     {% block css %}
-    {% endblock %}
+    {% endblock css %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -39,4 +39,6 @@
       <small>Loto</small>
     </footer>
   </body>
+  {% block js %}
+  {% endblock js %}
 </html>

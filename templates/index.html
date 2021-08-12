@@ -6,37 +6,60 @@
   <link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock css %}
 
+{% block js %}
+  <script src={% static "js/index.js" %}></script>
+{% endblock js %}
+
+
+
 {% block conteudo %}
+  <div id="main-table">
+    <div id="greetings">
+      <p id="greetings-text">
+        Bem vindo, <strong>Usuario</strong>
+      </p>
+      <p>
+        Escolha 20 números no painel para criar os seus jogos!
+      </p>
+    </div>
 
-  <h2>
-    Bem vindo,
-  </h2>
-  <div id="game">
-    <button class="button-game">1</button>
-    <button class="button-game">2</button>
-    <button class="button-game">3</button>
-    <button class="button-game">4</button>
-    <button class="button-game">5</button>
-    <button class="button-game">6</button>
-    <button class="button-game">7</button>
-    <button class="button-game">8</button>
-    <button class="button-game">9</button>
-    <button class="button-game">10</button>
-    <button class="button-game">11</button>
-    <button class="button-game">12</button>
-    <button class="button-game">13</button>
-    <button class="button-game">14</button>
-    <button class="button-game">15</button>
-    <button class="button-game">16</button>
-    <button class="button-game">17</button>
-    <button class="button-game">18</button>
-    <button class="button-game">19</button>
-    <button class="button-game">20</button>
-    <button class="button-game">21</button>
-    <button class="button-game">22</button>
-    <button class="button-game">23</button>
-    <button class="button-game">24</button>
-    <button class="button-game">25</button>
+    <div id="game">
+      <div>
+        <button class="button-game" type="button" onclick="handleGameButton(event,1)">1</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,2)">2</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,3)">3</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,4)">4</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,5)">5</button>
+      </div>
+      <div>
+        <button class="button-game" type="button" onclick="handleGameButton(event,6)">6</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,7)">7</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,8)">8</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,9)">9</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,10)">10</button>
+      </div>
+      <div>
+        <button class="button-game" type="button" onclick="handleGameButton(event,11)">11</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,12)">12</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,13)">13</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,14)">14</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,15)">15</button>
+      </div>
+      <div>
+        <button class="button-game" type="button" onclick="handleGameButton(event,16)">16</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,17)">17</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,18)">18</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,19)">19</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,20)">20</button>
+      </div>
+      <div>
+        <button class="button-game" type="button" onclick="handleGameButton(event,21)">21</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,22)">22</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,23)">23</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,24)">24</button>
+        <button class="button-game" type="button" onclick="handleGameButton(event,25)">25</button>
+      </div>
 
+    </div>
   </div>
 {% endblock conteudo %}
