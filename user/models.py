@@ -67,6 +67,15 @@ class Usuario(AbstractBaseUser , PermissionsMixin):
     verbose_name="Usuário é um superusuário",
     default=False
   )
+
+  def get_nome(self):
+    return self.nome
+  
+
+  def get_primeiro_nome(self):
+    return self.nome.split()[0]
+
+
   USERNAME_FIELD = "email"
 
   objects = UsuarioManager()
