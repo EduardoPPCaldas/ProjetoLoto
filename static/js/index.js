@@ -34,10 +34,15 @@ function handleGameSubmitButton(event){
       }
     }
 
-    while(game.size !== 15){
-      game.add(Math.floor(Math.random() * numbers.length))
+    while(games.size !== 12){
+
+      while(game.size !== 15){
+        game.add(numbers[Math.floor(Math.random() * numbers.length)])
+      }
+      const novoset = new Set(game) 
+      games.add(novoset)
+      game.clear()
+      console.log(games)
     }
-    games.add(game)
-    console.log(games)
   }
 }
