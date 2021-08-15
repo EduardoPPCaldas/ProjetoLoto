@@ -11,10 +11,10 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(37, 4, 37);
+  background-color: #610c5b;
   height: 6rem;
 
-  margin-bottom: 30px;
+  margin-bottom: 4rem;
 }
 #image-header-div{
   align-self: center;

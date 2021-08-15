@@ -6,6 +6,7 @@
   
   margin: auto;
 }
+
 p{
   font-family: "Roboto" , sans-serif;
 }
@@ -37,7 +38,7 @@ p{
   width: 50px;
 
   border-radius: 4px;
-  background-color: purple;
+  background-color: #610c5b ;
   border: 1px solid rgb(37, 1, 53);
   box-shadow: 0 1px indigo;
 
@@ -59,4 +60,28 @@ p{
   background-color: green;
   border: 1px solid lightgreen;
   box-shadow: none;
+}
+#game-results{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.create-game-results-button{
+  height: 80px;
+  width: 200px;
+
+  background-color: #610C5B ;
+  border-radius: 16px;
+  border: 1px solid grey;
+  box-shadow: 0 3px grey;
+
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+.create-game-results-button:active{
+  box-shadow: 0 1px grey;
+  transform: translateY(4px);
 }
