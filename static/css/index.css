@@ -61,7 +61,7 @@ p{
   border: 1px solid lightgreen;
   box-shadow: none;
 }
-#game-results{
+#game-results-button-div{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,4 +84,29 @@ p{
 .create-game-results-button:active{
   box-shadow: 0 1px grey;
   transform: translateY(4px);
+}
+
+.invisible{
+  visibility: hidden;
+  position: absolute;
+  top: -9999px;
+}
+
+.visible{
+  visibility: visible;
+  position: static;
+}
+
+.game-results-numbers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+  width: 50px;
+
+  background-color: #610c5b;
+  color: white;
+  border: 1px solid rgb(37, 1, 53);
+  border-radius: 1000px;
 }

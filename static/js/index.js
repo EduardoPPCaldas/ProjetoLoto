@@ -1,5 +1,5 @@
 const buttons = document.getElementsByClassName("button-game")
-
+const resultsDiv = document.getElementsByClassName("game-results-div")
 
 function handleGameButton(event, index){
   event.preventDefault()
@@ -39,10 +39,24 @@ function handleGameSubmitButton(event){
       while(game.size !== 15){
         game.add(numbers[Math.floor(Math.random() * numbers.length)])
       }
-      const novoset = new Set(game) 
-      games.add(novoset)
+      const auxSet = new Set(game) 
+      games.add(auxSet)
       game.clear()
-      console.log(games)
     }
+
+    for(let i=0; i<resultsDiv.length; i++){
+      resultsDiv.item(i).classList.remove("invisible")
+      resultsDiv.item(i).classList.add("visible")
+    }
+    let counter = 0    
+    games.forEach((value)=>{ 
+      value.forEach((number)=>{
+        let p = document.createElement("p")
+        p.classList.add("game-results-numbers")
+        p.textContent = number
+        resultsDiv.item(counter).appendChild(p)
+      })
+      counter++
+    })
   }
 }
