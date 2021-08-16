@@ -53,7 +53,7 @@ function handleGameSubmitButton(event){
       value.forEach((number)=>{
         let p = document.createElement("p")
         p.classList.add("game-results-numbers")
-        p.textContent = number
+        p.textContent = `${number}`
         resultsDiv.item(counter).appendChild(p)
       })
       counter++

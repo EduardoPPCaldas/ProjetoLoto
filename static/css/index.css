@@ -96,6 +96,22 @@ p{
   visibility: visible;
   position: static;
 }
+.game-results{
+  width: 80%;
+
+  margin: auto;
+}
+
+.game-results-div{
+  margin: 30px;
+  display: flex;
+
+  border: 3px solid rgb(37, 1, 53);
+  border-radius: 50px;
+
+  justify-content: space-evenly;
+}
+
 
 .game-results-numbers{
   display: flex;
@@ -104,9 +120,12 @@ p{
 
   height: 50px;
   width: 50px;
+  margin: 5px;
 
-  background-color: #610c5b;
-  color: white;
+  background-color: white;
+  color: #610c5b;
+  font-weight: bold;
+  font-size: 24px;
   border: 1px solid rgb(37, 1, 53);
   border-radius: 1000px;
 }
