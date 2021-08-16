@@ -45,6 +45,10 @@ function handleGameSubmitButton(event){
       game.clear()
     }
 
+    const resultTitle = document.getElementsByClassName("results-title").item(0)
+    resultTitle.classList.remove("invisible")
+    resultTitle.classList.add("visible")
+
     for(let i=0; i<resultsDiv.length; i++){
       resultsDiv.item(i).classList.remove("invisible")
       resultsDiv.item(i).classList.add("visible")
@@ -62,13 +66,22 @@ function handleGameSubmitButton(event){
       gameArray=[]
     })
     
+    let divLines = -1
     for(let i=0; i<12; i++){
       for(let j=0; j<15; j++){
+        if(j%5===0){
+          divLines++
+          let divNumbers = document.createElement("div")
+          divNumbers.classList.add("game-lines")
+          resultsDiv.item(i).appendChild(divNumbers)
+        }
+
         let p = document.createElement("p")
         p.classList.add("game-results-numbers")
-        p.textContent = `${gamesInArray[i][j]}`
-        resultsDiv.item(i).appendChild(p)
+        p.textContent = gamesInArray[i][j] >= 10 ? `${gamesInArray[i][j]}` : `0${gamesInArray[i][j]}`
+        document.getElementsByClassName("game-lines").item(divLines).appendChild(p)
       }
     }
   }
+  document.getElementById("create-game-results-button").disabled = true
 }
