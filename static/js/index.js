@@ -7,6 +7,7 @@ function handleGameButton(event, index){
   document.getElementsByClassName("button-game").item(index).classList.toggle("button-game-clicked")
 }
 
+
 function handleGameSubmitButton(event){
   event.preventDefault()
 
@@ -48,15 +49,26 @@ function handleGameSubmitButton(event){
       resultsDiv.item(i).classList.remove("invisible")
       resultsDiv.item(i).classList.add("visible")
     }
-    let counter = 0    
+    let gamesInArray = []
+    let gameArray = []
     games.forEach((value)=>{ 
       value.forEach((number)=>{
+        gameArray.push(number)
+      })
+      gameArray = gameArray.sort(function(a, b){
+        return a - b
+      })
+      gamesInArray.push(gameArray)
+      gameArray=[]
+    })
+    
+    for(let i=0; i<12; i++){
+      for(let j=0; j<15; j++){
         let p = document.createElement("p")
         p.classList.add("game-results-numbers")
-        p.textContent = `${number}`
-        resultsDiv.item(counter).appendChild(p)
-      })
-      counter++
-    })
+        p.textContent = `${gamesInArray[i][j]}`
+        resultsDiv.item(i).appendChild(p)
+      }
+    }
   }
 }
