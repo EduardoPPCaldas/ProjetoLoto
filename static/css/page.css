@@ -47,3 +47,28 @@ footer{
   height: 2rem;
   background-color: white;
 }
+
+@media only screen and (max-width: 320px) {
+  html{
+    width: min-content;
+  }
+  header{
+    width: min-content;
+  }
+}
+@media only screen and (max-width: 375px) {
+  html{
+    width: min-content;
+  }
+  header{
+    width: min-content;
+  }
+}
+@media only screen and (max-width: 425px) {
+  html{
+    width: min-content;
+  }
+  header{
+    width: min-content;
+  }
+}

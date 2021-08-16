@@ -1,10 +1,26 @@
 const buttons = document.getElementsByClassName("button-game")
 const resultsDiv = document.getElementsByClassName("game-results-div")
+let numberOfClicks = 0
+
+function clicks(click){
+  document.getElementById("clicks").innerHTML = `Números selecionados: ${click}/20`
+}
+clicks(numberOfClicks)
+
 
 function handleGameButton(event, index){
   event.preventDefault()
   index--
-  document.getElementsByClassName("button-game").item(index).classList.toggle("button-game-clicked")
+  if(buttons.item(index).classList.contains("button-game-clicked")){
+    buttons.item(index).classList.remove("button-game-clicked")
+    numberOfClicks--
+    clicks(numberOfClicks)
+  }
+  else{
+    buttons.item(index).classList.add("button-game-clicked")
+    numberOfClicks++
+    clicks(numberOfClicks)
+  }
 }
 
 
@@ -82,6 +98,13 @@ function handleGameSubmitButton(event){
         document.getElementsByClassName("game-lines").item(divLines).appendChild(p)
       }
     }
+    document.getElementById("create-game-results-button").disabled = true
   }
-  document.getElementById("create-game-results-button").disabled = true
 }
+
+function handleRestartButton(event){
+  event.preventDefault()
+
+  document.location.reload(true);
+}
+

@@ -75,11 +75,17 @@ p{
   border-radius: 16px;
   border: 1px solid grey;
   box-shadow: 0 3px grey;
+  margin: 20px;
 
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: bold;
+}
+#clicks{
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin: 15px;
 }
 .create-game-results-button:active{
   box-shadow: 0 1px grey;
@@ -148,4 +154,49 @@ p{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+@media only screen and (max-width: 320px){
+  #main-table{
+    flex-direction: column;
+  }
+  .game-results{
+    flex-direction: column;
+  }
+  #greetings-subtext{
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 375px){
+  #main-table{
+    flex-direction: column;
+  }
+  .game-results{
+    flex-direction: column;
+  }
+  #greetings-subtext{
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 475px){
+  #main-table{
+    flex-direction: column;
+  }
+  .game-results{
+    flex-direction: column;
+  }
+  #greetings-subtext{
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 768px){
+  #main-table{
+    flex-direction: column;
+  }
+  .game-results{
+    flex-direction: column;
+  }
+  #greetings-subtext{
+    margin-bottom: 30px;
+  }
 }

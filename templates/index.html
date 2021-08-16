@@ -18,9 +18,12 @@
       <p id="greetings-text">
         Bem vindo, <strong>{{ user.get_primeiro_nome }}</strong>
       </p>
-      <p>
+      <p id="greetings-subtext">
         Escolha 20 números no painel para criar os seus jogos!
       </p>
+      <h3 id="clicks">
+
+      </h3>
     </div>
 
     <div id="game">
@@ -64,6 +67,9 @@
   </div>
   <div id="game-results-button-div">
     <button class="create-game-results-button" id="create-game-results-button" type="button" onclick="handleGameSubmitButton(event)">Criar Jogos</button>
+    <button class="create-game-results-button restart" type="button" onclick="handleRestartButton(event)">
+      Recomeçar
+    </button>
   </div>
 
   <h2 class="results-title invisible">Melhores Jogos</h2>
