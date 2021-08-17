@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 ]
 INSTALLED_APPS += [
     'user',
+    'resultados'
 ]
 INSTALLED_APPS += [
     "phonenumber_field",

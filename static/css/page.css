@@ -5,7 +5,8 @@
 }
 body{
   height: 100vh;
-  background-color: lightgrey;
+  background-color: white;
+  background-image: url("/static/assets/images/texture.png");
 }
 header{
   display: flex;

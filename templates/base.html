@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Loto</title>
   </head>
   <body>
@@ -20,12 +23,12 @@
       <div id="image-header-div">
         <a href="{% url "index" %}" id="anchor-image">      
           <img src={% static "/assets/images/logo.png"%} alt="Logo do site"  id="image-header">
-          <p id="titulo">Logo</p>
+          <p id="titulo">Loto</p>
         </a>
       </div>
       <div>
         <a href="{% url "index" %}">Início</a>
-        <a href="#">Resultado</a>
+        <a href="{% url 'resultados' %}">Resultado</a>
       </div>
       <div>
         <a href="#">Sair</a>

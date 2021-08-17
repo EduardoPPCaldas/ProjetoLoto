@@ -33,6 +33,13 @@ p{
   align-items: stretch;
   justify-content: space-between;
 }
+strong{
+  color: #610c5b;
+  font-size: 3rem;
+}
+#greetings-subtext{
+  font-size: 1.2rem;
+}
 .button-game{
   height: 50px;
   width: 50px;
@@ -164,7 +171,7 @@ p{
     flex-direction: column;
   }
   #greetings-subtext{
-    margin-bottom: 30px;
+    margin-bottom: 30px;   
   }
 }
 @media only screen and (max-width: 375px){
