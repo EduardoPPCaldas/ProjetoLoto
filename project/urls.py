@@ -21,5 +21,5 @@ from resultados.views import resultados
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", index, name="index"),
-    path("/resultados", resultados, name="resultados")
+    path("resultados", resultados, name="resultados")
 ]

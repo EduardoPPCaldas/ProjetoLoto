@@ -1,0 +1,83 @@
+.div-image{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#image-center{
+  height: 150px;
+  width: 150px;
+}
+h2{
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  margin: 10px 0px 20px;
+}
+.resultados{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.concurso{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid rgb(37, 1, 53);
+  background-color: #610c5b;
+  border-radius: 16px;
+
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+
+  margin: 20px;
+}
+.concurso-line{
+  display: flex;
+}
+.concurso-label{
+  margin: 0 15px;
+}
+.results-number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: #610c5b;
+  font-weight: bold;
+  font-size: 24px;
+  border: 1px solid rgb(37, 1, 53);
+  border-radius: 1000px;
+
+}
+
+@media screen and (max-width: 320px) {
+  .concurso-line{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 375px) {
+  .concurso-line{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+  .concurso-line{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .concurso-line{
+    flex-direction: column;
+  }
+}

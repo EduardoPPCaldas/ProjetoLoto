@@ -11,6 +11,42 @@
 {% endblock js %}
 
 {% block conteudo %}
-  
-{% endblock conteudo %}
+  <div class="div-image">
+    <img src={% static "/assets/images/logo.png"%} alt="Logo do site" id="image-center">
+    <h2>Resultados dos últimos jogos</h2>
+  </div>
 
+  <div class="resultados">
+    {% for resultado in todos_resultados %}
+      <div class="concurso">
+        <div class="concurso-label">
+          <p>Concurso {{resultado.concurso}}:</p>
+        </div>
+
+        <div class="concurso-line">
+          <p class="results-number">{{resultado.primeiro_numero}}</p>
+          <p class="results-number">{{resultado.segundo_numero}}</p>
+          <p class="results-number">{{resultado.terceiro_numero}}</p>
+          <p class="results-number">{{resultado.quarto_numero}}</p>
+          <p class="results-number">{{resultado.quinto_numero}}</p>
+        </div>
+
+        <div class="concurso-line">
+          <p class="results-number">{{resultado.sexto_numero}}</p>
+          <p class="results-number">{{resultado.setimo_numero}}</p>
+          <p class="results-number">{{resultado.oitavo_numero}}</p>
+          <p class="results-number">{{resultado.nono_numero}}</p>
+          <p class="results-number">{{resultado.decimo_numero}}</p>
+        </div>
+
+        <div class="concurso-line">
+          <p class="results-number">{{resultado.decimo_primeiro_numero}}</p>
+          <p class="results-number">{{resultado.decimo_segundo_numero}}</p>
+          <p class="results-number">{{resultado.decimo_terceiro_numero}}</p>
+          <p class="results-number">{{resultado.decimo_quarto_numero}}</p>
+          <p class="results-number">{{resultado.decimo_quinto_numero}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock conteudo %}

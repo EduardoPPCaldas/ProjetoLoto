@@ -61,4 +61,4 @@ class Resultados(models.Model):
     db_table = "resultado"
 
   def __str__(self):
-    return self.concurso
+    return str(self.concurso)
