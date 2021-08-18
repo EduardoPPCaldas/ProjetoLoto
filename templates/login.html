@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% load widget_tweaks %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{% static "assets/images/favicon.ico" %}" type="image/x-icon">
+  <title>Login Loto</title>
+</head>
+<body>
+  <main>
+    <div class="login-table">
+      <div class="image-div">
+        <img src="{% static "assets/images/logo.png" %}" alt="">
+      </div>
+      <div class="login-div">
+        <form method="post">
+          {% csrf_token %}
+
+          {% for field in form %}
+            <div class="form-field">
+              {% render_field field placeholder=field.label class="form-control"%}
+            </div>
+          {% endfor %}
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

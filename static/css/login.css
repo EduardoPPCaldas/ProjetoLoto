@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: white;
+  background-image: url("/static/assets/images/texture.png");
+}
+
+.login-table{
+  height: 50vh;
+  width: 80vw;
+
+  display: flex;
+
+  background-color: white;
+  border-radius: 16px;
+  border: 2px solid rgb(37, 1, 53);
+
+  margin: 100px auto;
+}
+.image-div{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-div{
+  flex: 1;
+}
+img{
+  height: 150px;
+  width: 150px;
+}

@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from user.views import index
 from resultados.views import resultados
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("login/", auth_views.LoginView.as_view(template_name="login.html"), name="login"),
     path("", index, name="index"),
-    path("resultados", resultados, name="resultados")
+    path("resultados/", resultados, name="resultados"),
+    
 ]

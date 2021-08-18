@@ -45,6 +45,7 @@ INSTALLED_APPS += [
 ]
 INSTALLED_APPS += [
     "phonenumber_field",
+    "widget_tweaks"
 ]
 
 MIDDLEWARE = [
@@ -139,3 +140,8 @@ AUTH_USER_MODEL = "user.Usuario"
 #Phone Number
 
 PHONENUMBER_DEFAULT_REGION = "BR"
+
+#Login URL
+
+LOGIN_URL = "login"
+LOGIN_REDIRECT_URL = "index"
