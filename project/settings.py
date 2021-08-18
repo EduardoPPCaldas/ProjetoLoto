@@ -141,7 +141,7 @@ AUTH_USER_MODEL = "user.Usuario"
 
 PHONENUMBER_DEFAULT_REGION = "BR"
 
-#Login URL
+#Login and Logout URL
 
 LOGIN_URL = "login"
 LOGIN_REDIRECT_URL = "index"

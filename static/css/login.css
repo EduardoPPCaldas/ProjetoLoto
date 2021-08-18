@@ -11,27 +11,199 @@ body{
 }
 
 .login-table{
-  height: 50vh;
-  width: 80vw;
+  height: 80vh;
+  width: 50vw;
 
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   background-color: white;
   border-radius: 16px;
-  border: 2px solid rgb(37, 1, 53);
+  border: 1px solid rgb(37, 1, 53);
 
   margin: 100px auto;
 }
 .image-div{
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+h3{
+  font-family: "Roboto",  sans-serif;
+  font-size: 24px;
+}
 .login-div{
   flex: 1;
+  display: flex;
+  border-top: 1px solid #ccc;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 img{
   height: 150px;
   width: 150px;
+}
+.form-control{
+  width: 100%;
+  padding: 12px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+}
+button{
+  height: 40px;
+  width: 100px;
+
+  background-color: #610C5B ;
+  border-radius: 16px;
+  border: 1px solid grey;
+  box-shadow: 0 3px grey;
+  margin: 20px;
+
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+button:active{
+  box-shadow: 0 1px grey;
+  transform: translateY(4px);
+}
+p{
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 16px;
+}
+a{
+  color: #610C5B;
+  text-decoration: none;
+}
+.button-login-div{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border-left: 0;
+    border-top: 1px solid #ccc;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border: none;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border: none;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 768px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border: none;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border: none;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border: none;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
 }
