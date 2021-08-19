@@ -41,6 +41,12 @@ a{
   margin-left: 0.5rem;
   font-size: 32px;
 }
+#inicio{
+  position: relative;
+}
+#resultados{
+  position: relative;
+}
 main{
   min-height: 100%;
 }

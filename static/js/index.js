@@ -108,3 +108,38 @@ function handleRestartButton(event){
   document.location.reload(true);
 }
 
+function createSuggestions(){
+  const suggestions = new Set()
+  let suggestionsSorted = []
+
+  while(suggestions.size !== 10){
+    suggestions.add(Math.floor(Math.random() * 25) + 1)
+  }
+
+  suggestions.forEach(
+    (value)=>{
+      suggestionsSorted.push(value)
+    }
+  )
+
+  suggestionsSorted.sort((a , b) => {
+    return a - b
+  })
+
+  let counter = -1
+
+  for(let i=0; i<10 ; i++){
+    if(i%5===0){
+      counter++
+      let div = document.createElement("div")
+      div.classList.add("suggestion-lines")
+      document.getElementById("suggestions-body").appendChild(div)
+    }
+    let p = document.createElement("p")
+    p.textContent = suggestionsSorted[i] >= 10 ? `${suggestionsSorted[i]}` : `0${suggestionsSorted[i]}`
+    p.classList.add("game-results-numbers")
+    p.classList.add("game-suggestions-numbers")
+    document.getElementsByClassName("suggestion-lines").item(counter).appendChild(p)
+  }
+}
+createSuggestions()

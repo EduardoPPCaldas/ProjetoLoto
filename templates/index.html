@@ -65,12 +65,28 @@
     </div>
 
   </div>
+
+  <div id="suggestions">
+    <div class="suggestions-header">
+      <p>Números da sorte!</p>
+    </div>
+
+    <div id="suggestions-body">
+    </div>
+  </div>
+
   <div id="game-results-button-div">
     <button class="create-game-results-button" id="create-game-results-button" type="button" onclick="handleGameSubmitButton(event)">Criar Jogos</button>
     <button class="create-game-results-button restart" type="button" onclick="handleRestartButton(event)">
       Recomeçar
     </button>
   </div>
+
+  {% if user.is_staff and user.is_superuser %}
+    <div id="admin-div">    
+      <a href="{% url "admin:index" %}" id="admin-link">Admin site</a>
+    </div>
+  {% endif %}
 
   <h2 class="results-title invisible">Melhores Jogos</h2>
 

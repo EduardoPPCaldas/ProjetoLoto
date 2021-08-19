@@ -162,7 +162,37 @@ strong{
   justify-content: space-evenly;
   align-items: center;
 }
+#suggestions{
+  display: flex;
+  flex-direction: column;
 
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: -60px;
+  margin-top: 30px;
+}
+#suggestions-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.suggestion-lines{
+  display: flex;
+}
+
+#admin-link{
+  color: #610C5B;
+}
+#admin-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -40px;
+}
+
+/* RESPONSIVE ========================================================================================================== */
 @media only screen and (max-width: 320px){
   #main-table{
     flex-direction: column;
@@ -172,6 +202,9 @@ strong{
   }
   #greetings-subtext{
     margin-bottom: 30px;   
+  }
+  #suggestions-body{
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 375px){
@@ -184,6 +217,9 @@ strong{
   #greetings-subtext{
     margin-bottom: 30px;
   }
+  #suggestions-body{
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 475px){
   #main-table{
@@ -194,6 +230,9 @@ strong{
   }
   #greetings-subtext{
     margin-bottom: 30px;
+  }
+  #suggestions-body{
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 768px){
