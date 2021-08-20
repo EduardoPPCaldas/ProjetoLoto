@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: white;
+  background-image: url("/static/assets/images/texture.png");
+}
+.login-table{
+  height: 80vh;
+  width: 50vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: white;
+  border-radius: 16px;
+  border: 1px solid rgb(37, 1, 53);
+
+  margin: 100px auto;
+}
+.image-div{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-div{
+  flex: 1;
+  display: flex;
+  border-top: 1px solid #ccc;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h3{
+  font-family: "Roboto",  sans-serif;
+  font-size: 24px;
+}
+img{
+  height: 150px;
+  width: 150px;
+}
