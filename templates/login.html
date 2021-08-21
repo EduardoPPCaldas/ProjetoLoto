@@ -22,6 +22,16 @@
 </head>
 <body>
   <main>
+    {% if messages %}
+      <div class="messages">      
+        {%for mensagem in messages%}
+          <div class="alert-success" role="alert">
+            {{mensagem}}
+          </div> 
+        {%endfor%}
+      </div>
+    {% endif %}
+
     <div class="login-table">
       <div class="image-div">
         <img src="{% static "assets/images/logo.png" %}" alt="">

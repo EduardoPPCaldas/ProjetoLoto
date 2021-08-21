@@ -1,5 +1,5 @@
 from django.shortcuts import redirect, render
-
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from user.forms import CustomRegistrationForm
 
@@ -18,6 +18,10 @@ def signup(request):
     if form.is_valid():
       user = form.save()
       user.save()
+      messages.success(
+        request,
+        "Usuário registrado com sucesso!"
+      )
       return redirect('login')
 
   context = {

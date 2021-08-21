@@ -9,6 +9,11 @@ body{
   background-color: white;
   background-image: url("/static/assets/images/texture.png");
 }
+.form-field{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .login-table{
   height: 80vh;
   width: 50vw;
@@ -33,7 +38,6 @@ body{
 .login-div{
   flex: 1;
   display: flex;
-  border-top: 1px solid #ccc;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -73,4 +77,134 @@ button{
 button:active{
   box-shadow: 0 1px grey;
   transform: translateY(4px);
+}
+.redirect{
+  display: flex;
+  margin-top: -50px;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  color: #610C5B;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 320px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border-left: 0;
+    border-top: 1px solid #ccc;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border: none;
+  }
+  .form-control{
+    margin: 5px;
+    width: 90%;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border: none;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 768px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border: none;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border: none;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .login-table{
+    width: 70vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .login-div{
+    border: none;
+  }
+  .form-control{
+    margin: 5px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: smaller;
+  }
 }
