@@ -46,3 +46,31 @@ img{
   height: 150px;
   width: 150px;
 }
+
+.form-control{
+  width: 100%;
+  padding: 12px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+}
+button{
+  height: 40px;
+  width: 180px;
+
+  background-color: #610C5B ;
+  border-radius: 16px;
+  border: 1px solid grey;
+  box-shadow: 0 3px grey;
+  margin: 20px;
+
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+button:active{
+  box-shadow: 0 1px grey;
+  transform: translateY(4px);
+}

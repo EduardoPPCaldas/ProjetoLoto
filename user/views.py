@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 
 from django.contrib.auth.decorators import login_required
 from user.forms import CustomRegistrationForm
@@ -11,6 +11,14 @@ def index(request):
 
 def signup(request):
   form = CustomRegistrationForm()
+
+  if request.method == "POST":
+    form = CustomRegistrationForm(request.POST)
+
+    if form.is_valid():
+      user = form.save()
+      user.save()
+      return redirect('login')
 
   context = {
     "sign_up_form" : form
