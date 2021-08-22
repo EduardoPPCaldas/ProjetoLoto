@@ -9,6 +9,28 @@ body{
   background-color: white;
   background-image: url("/static/assets/images/texture.png");
 }
+.warnings-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.alert-warning{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #FFF3CD;
+
+  color: #956445;
+  font-family: "Roboto", sans-serif;
+  border-radius: 16px;
+
+  margin-top: 16px;
+
+  width: 200px;
+  height: 120px;
+}
 .form-field{
   display: flex;
   justify-content: center;
