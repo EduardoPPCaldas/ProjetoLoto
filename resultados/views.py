@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 @login_required
 def resultados(request):
   todos_resultados = Resultados.objects.order_by(
-    "concurso"
+    "-concurso"
   )
 
   context = {
